@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <title>USB Survey</title>
+      <link rel="stylesheet" href="styles.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="encuesta">
+    <h1 id="title">USB Survey</h1>
+    <p id="description">Survey made by and for the student</p>
+    <form id="survey-form">
+      <hr>
+        <fieldset>
+          <label id="name-label" class="name">Name: <input    id="name" type="text"   placeholder="Enter your name" required></label>
+          <label id="email-label" class="email">Email: <input id="email"      type="email"  require placeholder="Enter your email" required></label>
+          <label id="number-label" class="number">Age: <input id="number" type="number" min="16" max="120" placeholder="Age" required></label>
+          <label><select class="opciones" id="dropdown">
+            <option value="">Select an option</option>
+            <option value="1">Carrera corta</option>
+            <option value="2">Carrera larga</option>
+            <option value="3">Postgrado</option>
+            <option value="4">Otro</option>
+            </select></label>
+        </fieldset>
+        <fieldset>
+          <label>Sede: </label>
+          <label><input class="boton" type="radio" name="sartenejas-litoral" value="sartenejas"/>Sartenejas</label>
+          <label><input class="boton"
+type="radio" name="sartenejas-litoral" value="litoral"/>Litoral</label>
+        </fieldset>
+ 
+        <fieldset>
+          <label>Carrera que estas cursando: <input type="text" placeholder="Ingenieria mecanica"/></label>
+        </fieldset>
+        <fieldset>
+       <label>Demanda de rutas:</label> <label><input type="checkbox" value="coche" class="checkbox"/>Coche-Sartenejas</label>
+        <label><input type="checkbox" value="rinconada" class="checkbox"/>La Rinconada-Sartenejas</label>
+
+    <label>Dejanos un comentario: <textarea name="comentario" rows="2" cols="30" placeholder="Me gusta la Simon"></textarea></label>
+<input type="submit" id="submit" class="submit"/></fieldset>
+ </form>
+ 
+   </div>
+  </body>
+</html>
